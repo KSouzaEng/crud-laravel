@@ -29,7 +29,7 @@ class PessoaController extends Controller
 
         // $pessoa->save();
 
-        \App\Pessoa::create($request->all());
+       $pessoas = \App\Pessoa::create($request->all());
         return redirect('/pessoas');
     }
 
