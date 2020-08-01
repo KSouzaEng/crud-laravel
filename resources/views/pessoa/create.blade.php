@@ -1,7 +1,7 @@
 <h1>Formulário de Cadastro de Pessoas</h1>
 
-<form action="/pessoa" method="POST">
-
+<form action="/pessoas" method="POST">
+@csrf
 <input type="text" name="nome" >
 <input type="text" name="telefone" >
 <input type="text" name="email">
@@ -10,4 +10,4 @@
 
 <br>
 
-<a href="pessoas">voltar</a>
+<a href="/pessoas">voltar</a>
