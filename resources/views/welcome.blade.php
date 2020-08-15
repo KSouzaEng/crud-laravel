@@ -81,11 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Página de teste
+                    Página de teste 2
                 </div>
 
                 <div class="links">
-                    <a href="/pessoas">Pessoas</a>
+                    <a href="/pessoas">Pessoas </a>
                     
                 </div>
             </div>

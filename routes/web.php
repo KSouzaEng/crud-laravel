@@ -17,8 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('pessoas','PessoaController@index');
+Route::get('pessoas','PessoaController@index' );
 Route::post('pessoas','PessoaController@store');
 Route::get('pessoas/create', 'PessoaController@create');
+
 
 
