@@ -32,5 +32,20 @@ class PessoaController extends Controller
        $pessoas = \App\Pessoa::create($request->all());
         return redirect('/pessoas');
     }
+    public function edit(\App\Pessoa $pessoa){
+
+
+        return view ('pessoa.create', compact('pessoa'));
+
+
+    }
+
+    public function update(Request $request, \App\Pessoa $pessoa){
+
+       $pessoa->update($request->all());
+       return redirect ('/pessoas');
+    }
+
+    
 
 }
