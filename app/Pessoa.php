@@ -11,9 +11,11 @@ class Pessoa extends Model
 
         'nome',
         'telefone',
-        'email'
+        'email',
+        'user_id'
 
     ];
+    
 
         
    

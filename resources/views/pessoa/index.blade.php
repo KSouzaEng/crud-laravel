@@ -1,8 +1,8 @@
-@extends('templates.master')
+@extends('layouts.app')
 
 @section('titulo','Lista de pessoas')
 
-@section('conteudo')
+@section('content')
 <h1>Pessoas Cadastradas</h1>
 
 
