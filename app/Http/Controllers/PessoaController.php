@@ -3,13 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+Use App\Pessoa;
 
 class PessoaController extends Controller
 {
     //
     public function index(){
 
-        $pessoas = \App\Pessoa::all();
+        $pessoas = Pessoa::all();
 
         return view('pessoa.index',compact('pessoas'));
     }
@@ -29,15 +30,19 @@ class PessoaController extends Controller
 
         // $pessoa->save();
 
-       $pessoas = \App\Pessoa::create($request->all());
+       $pessoas = Pessoa::create($request->all());
         return redirect('/pessoas');
     }
-    public function edit(\App\Pessoa $pessoa){
+    public function edit(Pessoa $pessoa){
 
 
         return view ('pessoa.create', compact('pessoa'));
 
 
+    }
+    public function show(Pessoa $pessoa){
+
+        return view('pessoa.show', compact('pessoa'));
     }
 
     public function update(Request $request, \App\Pessoa $pessoa){
@@ -46,7 +51,7 @@ class PessoaController extends Controller
        return redirect ('/pessoas');
     }
 
-    public function destroy(\App\Pessoa $pessoa){
+    public function destroy(Pessoa $pessoa){
 
         $pessoa->delete();
         return redirect ('/pessoas');
