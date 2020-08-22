@@ -7,4 +7,4 @@
     <input class="btn btn-danger" type="submit" value="Sim">
 </form>
 
-<a class="btn btn-primary" href="/pessoas">Não</a>
+<a class="btn btn-primary" href="/pessoas">Não</a> 
