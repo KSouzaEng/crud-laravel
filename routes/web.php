@@ -27,7 +27,6 @@ Route::get('/', function () {
 
 Route::resource('pessoas', 'PessoaController');
 
+Auth::routes();
 
-
-
-
+Route::get('/home', 'HomeController@index')->name('home');

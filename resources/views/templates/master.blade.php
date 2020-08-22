@@ -10,8 +10,10 @@
     <title> @yield('titulo')</title>
   </head>
   <body>
+      <div class="container">
+        @yield('conteudo')
+    </div>
 
-  @yield('conteudo')
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
